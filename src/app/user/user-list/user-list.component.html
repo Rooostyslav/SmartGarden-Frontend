@@ -1,0 +1,27 @@
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Gardens</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <th>{{user.id}}</th>
+                <th>{{user.name}}</th>
+                <th>{{user.email}}</th>
+                <th>{{user.role}}</th>
+                <th>
+                    <a [routerLink]="['/users/' + user.id + '/gardens']"></a>
+                </th>
+            </tr>
+            <h1 *ngIf="!users" class="text-center mt-3">
+                Users Not Found
+            </h1>
+        </tbody>
+    </table>
+</div>
