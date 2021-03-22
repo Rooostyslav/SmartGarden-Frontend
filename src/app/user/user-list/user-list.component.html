@@ -11,13 +11,13 @@
         </thead>
         <tbody>
             <tr *ngFor="let user of users">
-                <th>{{user.id}}</th>
-                <th>{{user.name}}</th>
-                <th>{{user.email}}</th>
-                <th>{{user.role}}</th>
-                <th>
-                    <a [routerLink]="['/users/' + user.id + '/gardens']"></a>
-                </th>
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.role}}</td>
+                <td>
+                    <a [routerLink]="['/users/' + user.id + '/gardens']">gardens</a>
+                </td>
             </tr>
             <h1 *ngIf="!users" class="text-center mt-3">
                 Users Not Found

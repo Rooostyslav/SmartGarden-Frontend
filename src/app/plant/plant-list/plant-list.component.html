@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="m-2 mb-3">
+        <h1>Plants from garden with id = {{gardenId}}</h1>
+        <button class="btn btn-primary" [routerLink]="['/plants/new']">Create new plant</button>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Location</th>
+                <th>Actions</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let plant of plants">
+                <td>{{plant.id}}</td>
+                <td>{{plant.name}}</td>
+                <td>{{plant.description}}</td>
+                <td>{{plant.location}}</td>
+                <td>
+                    <a href="">actions</a>
+                </td>
+                <td>
+                    <button class="btn btn-light" [routerLink]="['/plants/edit/' + plant.id]">Edit</button>
+                </td>
+                <td>
+                    <button class="btn btn-danger" (click)="onDelete(plant.id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
