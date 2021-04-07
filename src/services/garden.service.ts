@@ -8,13 +8,20 @@ import { SMART_GARDEN_API } from 'src/app/app-injections-tokens';
 })
 export class GardenService {
 
-  private baseApiUrl = this.apiUrl + '/api'
+  private baseApiUrl = this.apiUrl + '/api/'
 
   constructor(private http: HttpClient,
     @Inject(SMART_GARDEN_API) private apiUrl: string) { }
 
-  getGardensByUser(userId: number): Observable<any> {
-    return this.http.get<any>(this.baseApiUrl + '/users/' + userId + '/gardens');
+  getMyGardens(): Observable<any> {
+    return this.http.get<any>(this.baseApiUrl + 'gardens/my');
   }
 
+  getGardenById(gardenId: number) : Observable<any> {
+    return this.http.get<any>(this.baseApiUrl + 'gardens/' + gardenId);
+  }
+
+  getGardensByUser(userId: number) : Observable<any> {
+    return this.http.get<any>(this.baseApiUrl + 'users/' + userId + '/gardens');
+  }
 }

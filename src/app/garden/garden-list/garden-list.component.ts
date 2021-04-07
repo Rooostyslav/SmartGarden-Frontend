@@ -8,23 +8,29 @@ import { GardenService } from 'src/services/garden.service';
   styleUrls: ['./garden-list.component.css']
 })
 export class GardenListComponent implements OnInit {
-
+  
   userId: any;
   gardens: any;
 
   constructor(
     private route: ActivatedRoute,
-    private gardenService: GardenService) { 
-      route.params.subscribe(p => {
-        this.userId = +p['id'];
-      });
-    }
+    private gardenService: GardenService
+  ) {
+    this.route.params.subscribe(p => {
+      this.userId = +p['id'];
+    });
+   }
 
   ngOnInit(): void {
-    this.gardenService.getGardensByUser(this.userId).subscribe(result => {
-      this.gardens = result;
-      console.log(this.gardens);
-    });
+
+    if (this.userId) {
+      this.gardenService.getGardensByUser(this.userId)
+        .subscribe(result => this.gardens = result);
+    } else {
+      this.gardenService.getMyGardens()
+        .subscribe(result => this.gardens = result);
+    }
   }
+
 
 }

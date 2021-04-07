@@ -1,14 +1,38 @@
 <header>
-    <nav class="navbar navbar-light bg-light m-2">
+    <nav class="navbar navbar-light bg-light p-3">
         <div class="container-fruid">
             <a [routerLink]="['']" class="navbar-brand">Smart Garden</a>
         </div>
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <button class="btn btn-secondary mr-2" [routerLink]="['/users']" >User List</button>
+        <ul *ngIf="authService.isLoggedIn" class="navbar-nav mr-auto">
+           
+            <li *ngIf="isAdmin() else userTemplate" class="nav-item">
+                <button class="btn btn-warning mr-2" [routerLink]="['/users']" >Users</button>
             </li>
-  
-  
+            <ng-template #userTemplate>
+                <li class="nav-item">
+                    <button class="btn btn-success mr-2" [routerLink]="['/gardens/my']" >Gardens</button>
+                </li>
+            </ng-template>
         </ul>
+
+        <div class="container-fruid pr-3 d-block">
+            <div *ngIf="authService.isLoggedIn" class="d-inline">
+                <button class="btn btn-info mr-2" [routerLink]="['/']" >
+                    <p class="h6">{{user.email}}</p>
+                </button>
+            </div>
+            <div *ngIf="authService.isLoggedIn" class="d-inline">
+                <button class="btn btn-secondary" (click)="logout()" [routerLink]="['/log-in']" >
+                    <p class="h6">Logout</p>
+                </button>
+            </div>
+
+            <div *ngIf="!authService.isLoggedIn" class="d-inline">
+                <button class="btn btn-outline-secondary mr-2" [routerLink]="['/sign-up']" >Sign Up</button>
+            </div>
+            <div *ngIf="!authService.isLoggedIn" class="d-inline">
+                <button class="btn btn-outline-secondary mr-2" [routerLink]="['/log-in']" >Login</button>
+            </div>
+        </div>
     </nav>
 </header>
