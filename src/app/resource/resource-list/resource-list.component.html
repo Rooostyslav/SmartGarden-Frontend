@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="m-2 mb-3">
+        <h1>{{topicText}}</h1>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let resource of resources">
+                <td>{{resource.id}}</td>
+                <td>{{resource.name}}</td>
+                <td>{{resource.amount}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

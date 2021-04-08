@@ -10,6 +10,7 @@ import { PlantService } from 'src/services/plant.service';
 })
 export class PlantListComponent implements OnInit {
 
+  topicText: any;
   plants: any;
   gardenId: any;
   garden: any = {
@@ -26,11 +27,23 @@ export class PlantListComponent implements OnInit {
     }
 
   ngOnInit(): void {
-    this.gardenService.getGardenById(this.gardenId)
-      .subscribe(result => this.garden = result);
+    if (this.gardenId) {
 
-    this.plantService.getPlantByGarden(this.gardenId)
-      .subscribe(result => this.plants = result);
+      this.gardenService.getGardenById(this.gardenId)
+        .subscribe(result => {
+          this.garden = result;
+          this.topicText = 'Plants in garden: "' + this.garden.name + '"';
+        });
+
+        this.plantService.getPlantsByGarden(this.gardenId)
+          .subscribe(result => this.plants = result);
+        
+    } else {
+
+      this.topicText = 'My Plants';
+      this.plantService.getMyPlants()
+          .subscribe(result => this.plants = result);
+    }
   }
 
   onDelete(plantId: number) {

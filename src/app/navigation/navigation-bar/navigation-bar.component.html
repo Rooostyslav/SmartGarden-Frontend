@@ -3,18 +3,13 @@
         <div class="container-fruid">
             <a [routerLink]="['']" class="navbar-brand">Smart Garden</a>
         </div>
-        <ul *ngIf="authService.isLoggedIn" class="navbar-nav mr-auto">
-           
-            <li *ngIf="isAdmin() else userTemplate" class="nav-item">
+
+        <ul *ngIf="isAdmin() else userTemplate" class="navbar-nav mr-auto">
+            <li  class="nav-item">
                 <button class="btn btn-warning mr-2" [routerLink]="['/users']" >Users</button>
             </li>
-            <ng-template #userTemplate>
-                <li class="nav-item">
-                    <button class="btn btn-success mr-2" [routerLink]="['/gardens/my']" >Gardens</button>
-                </li>
-            </ng-template>
         </ul>
-
+        
         <div class="container-fruid pr-3 d-block">
             <div *ngIf="authService.isLoggedIn" class="d-inline">
                 <button class="btn btn-info mr-2" [routerLink]="['/cabinet']" >
@@ -36,3 +31,26 @@
         </div>
     </nav>
 </header>
+
+<ng-template #userTemplate>
+    <ul class="navbar-nav mr-1">
+        <li class="nav-item">
+            <button class="btn btn-success mr-2" [routerLink]="['/gardens/my']" >Gardens</button>
+        </li>
+    </ul>
+    <ul class="navbar-nav mr-1">
+        <li class="nav-item">
+            <button class="btn btn-warning mr-2" [routerLink]="['/plants/my']" >Plants</button>
+        </li>
+    </ul>
+    <ul class="navbar-nav mr-1">
+        <li class="nav-item">
+            <button class="btn btn-danger mr-2" [routerLink]="['/actions/my']" >Actions</button>
+        </li>
+    </ul>
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <button class="btn btn-dark mr-2" [routerLink]="['/resources/my']" >Resources</button>
+        </li>
+    </ul>
+</ng-template>

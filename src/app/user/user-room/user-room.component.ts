@@ -29,17 +29,21 @@ export class UserRoomComponent implements OnInit {
       .subscribe(result => this.user = result);
   }
 
-  isAdmin(): boolean {
+  get isLoggedIn(): boolean {
+    return this.authService.isLoggedIn;
+  }
+
+  get backupString(): string {
+    return this.backupService.getBackupPath();
+  }
+
+  get isAdmin(): boolean {
     if (this.authService.isLoggedIn) {
       if(this.user.role && this.user.role == "admin") {
         return true;
       }
     }
     return false;
-  }
-  
-  get backupString(): string {
-    return this.backupService.getBackupPath();
   }
 
 }

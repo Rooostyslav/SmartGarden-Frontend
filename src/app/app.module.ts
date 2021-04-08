@@ -21,6 +21,8 @@ import { SignInComponent } from './auth/sign-in/sign-in.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import { BackupService } from 'src/services/backup.service';
 import { UserRoomComponent } from './user/user-room/user-room.component';
+import { ActionListComponent } from './action/action-list/action-list.component';
+import { ResourceListComponent } from './resource/resource-list/resource-list.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { UserRoomComponent } from './user/user-room/user-room.component';
     PlantListComponent,
     SignInComponent,
     SignUpComponent,
-    UserRoomComponent
+    UserRoomComponent,
+    ActionListComponent,
+    ResourceListComponent
   ],
   imports: [
     BrowserModule,

@@ -23,6 +23,10 @@ export class UserService {
     return this.http.get<ViewUser>(this.baseApiUrl + '/my');
   }
 
+  getUserById(userId: number): Observable<ViewUser> {
+    return this.http.get<ViewUser>(this.baseApiUrl + '/' + userId);
+  }
+
   createUser(user: User) {
     return this.http.post(this.baseApiUrl, user);
   }

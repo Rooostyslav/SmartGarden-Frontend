@@ -1,6 +1,6 @@
 <div class="container">
     <div class="m-2 mb-3">
-        <h1>My Gardens</h1>
+        <h1>{{topicText}}</h1>
     </div>
     <table class="table">
         <thead>
@@ -21,7 +21,7 @@
                     <a [routerLink]="['/gardens/' + garden.id + '/plants']">plants</a>
                 </td>
                 <td>
-                    <a href="">resources</a>
+                    <a [routerLink]="['/gardens/' + garden.id + '/resources']">resources</a>
                 </td>
             </tr>
         </tbody>

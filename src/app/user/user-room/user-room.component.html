@@ -1,21 +1,52 @@
 <div class="container">
-    <div>
-        <div class="text-left">
-            <img src="assets/images/user-image.jpg" class="img-thumbnail" alt="user-image">
+    <div *ngIf="isLoggedIn else isNotLogged">
+        <div>
+            <div class="mt-4 mb-1 text-center">
+                <h3>My cabinet</h3>
+            </div>
+            <div class="d-inline">
+                <div class="d-inline mr-2">
+                    <img src="assets/images/user-image.jpg" class="img-thumbnail" alt="user-image">
+                </div>
+                <div class="d-block">
+                    <div class="mb-2">
+                        <h3 class="d-inline">Name: </h3>
+                        <h4 class="d-inline">{{user.name}}</h4>
+                    </div>
+                    <div class="mb-2">
+                        <h3 class="d-inline">Email: </h3>
+                        <h4 class="d-inline">{{user.email}}</h4>
+                    </div>
+                    <div *ngIf="isAdmin" class="mb-3">
+                        <button class="btn btn-danger">
+                            <a [href]="backupString" download class="text-light">Create Backup</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-
-    </div>
-    
-    <div *ngIf="isAdmin()" class="mt-4">
-        <div class="">
-            <button class="btn btn-danger">
-                <a [href]="backupString" download class="text-light">Create Backup</a>
-            </button>
+        <div *ngIf="isAdmin else isUser" class="mt-4">
+            <div>
+                <h3 class="mb-2">User List</h3>
+                <app-user-list></app-user-list>
+            </div>
         </div>
-
-
-
     </div>
-
-
 </div>
+
+<ng-template #isUser>
+    <div class="mb-3">
+        <button class="btn btn-danger">
+            <a [href]="backupString" download class="text-light">Create Backup</a>
+        </button>
+    </div>
+    <div>
+        <h3>My Gardens</h3>
+        <app-garden-list></app-garden-list>
+    </div>
+</ng-template>
+
+
+<ng-template #isNotLogged>
+    <h2 class="m-3">You are not logged in!</h2>
+</ng-template>
