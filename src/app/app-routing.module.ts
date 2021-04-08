@@ -6,11 +6,13 @@ import { GardenListComponent } from './garden/garden-list/garden-list.component'
 import { PlantFormComponent } from './plant/plant-form/plant-form.component';
 import { PlantListComponent } from './plant/plant-list/plant-list.component';
 import { UserListComponent } from './user/user-list/user-list.component';
+import { UserRoomComponent } from './user/user-room/user-room.component';
 
 const routes: Routes = [
-  { path: 'log-in', component: SignInComponent },
+  { path: '', redirectTo: 'login', pathMatch: 'full'},
+  { path: 'login', component: SignInComponent },
   { path: 'sign-up', component: SignUpComponent },
-  
+  { path: 'cabinet', component: UserRoomComponent },
   { path: 'users', component: UserListComponent },
   { path: 'gardens/my', component: GardenListComponent },
 

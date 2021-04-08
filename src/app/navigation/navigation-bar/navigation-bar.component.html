@@ -17,12 +17,12 @@
 
         <div class="container-fruid pr-3 d-block">
             <div *ngIf="authService.isLoggedIn" class="d-inline">
-                <button class="btn btn-info mr-2" [routerLink]="['/']" >
+                <button class="btn btn-info mr-2" [routerLink]="['/cabinet']" >
                     <p class="h6">{{user.email}}</p>
                 </button>
             </div>
             <div *ngIf="authService.isLoggedIn" class="d-inline">
-                <button class="btn btn-secondary" (click)="logout()" [routerLink]="['/log-in']" >
+                <button class="btn btn-secondary" (click)="logout()" [routerLink]="['/login']" >
                     <p class="h6">Logout</p>
                 </button>
             </div>
@@ -31,7 +31,7 @@
                 <button class="btn btn-outline-secondary mr-2" [routerLink]="['/sign-up']" >Sign Up</button>
             </div>
             <div *ngIf="!authService.isLoggedIn" class="d-inline">
-                <button class="btn btn-outline-secondary mr-2" [routerLink]="['/log-in']" >Login</button>
+                <button class="btn btn-outline-secondary mr-2" [routerLink]="['/login']" >Login</button>
             </div>
         </div>
     </nav>

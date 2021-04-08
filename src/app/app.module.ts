@@ -19,6 +19,8 @@ import { AuthService } from 'src/services/auth.service';
 import { AuthInterceptor } from 'src/interseptors/auth-interceptor';
 import { SignInComponent } from './auth/sign-in/sign-in.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
+import { BackupService } from 'src/services/backup.service';
+import { UserRoomComponent } from './user/user-room/user-room.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { SignUpComponent } from './auth/sign-up/sign-up.component';
     PlantFormComponent,
     PlantListComponent,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    UserRoomComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +45,7 @@ import { SignUpComponent } from './auth/sign-up/sign-up.component';
     GardenService,
     PlantService,
     AuthService,
+    BackupService,
     { provide: SMART_GARDEN_API, useValue: environment.smartGardenApi },
     { provide: SMART_GARDEN_AUTH_API, useValue: environment.smartGardenAuthApi },
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }

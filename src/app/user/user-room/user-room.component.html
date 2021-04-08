@@ -1,0 +1,21 @@
+<div class="container">
+    <div>
+        <div class="text-left">
+            <img src="assets/images/user-image.jpg" class="img-thumbnail" alt="user-image">
+        </div>
+
+    </div>
+    
+    <div *ngIf="isAdmin()" class="mt-4">
+        <div class="">
+            <button class="btn btn-danger">
+                <a [href]="backupString" download class="text-light">Create Backup</a>
+            </button>
+        </div>
+
+
+
+    </div>
+
+
+</div>
