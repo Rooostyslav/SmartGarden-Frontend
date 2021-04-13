@@ -27,6 +27,10 @@ export class PlantListComponent implements OnInit {
     }
 
   ngOnInit(): void {
+    this.updatePlants();
+  }
+
+  updatePlants() {
     if (this.gardenId) {
 
       this.gardenService.getGardenById(this.gardenId)
@@ -49,6 +53,7 @@ export class PlantListComponent implements OnInit {
   onDelete(plantId: number) {
     this.plantService.deletePlant(plantId)
       .subscribe(result => {
+        this.updatePlants();
         alert("Success delete!");
       });
   }

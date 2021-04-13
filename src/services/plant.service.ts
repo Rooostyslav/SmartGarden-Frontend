@@ -24,6 +24,10 @@ export class PlantService {
     return this.http.get<ViewPlant>(this.baseApiUrl + '/' + plantId);
   }
 
+  getPlantCondition(plantId: number): Observable<number> {
+    return this.http.get<number>(this.baseApiUrl + '/' + plantId + '/condition');
+  }
+
   getMyPlants(): Observable<ViewPlant> {
     return this.http.get<ViewPlant>(this.baseApiUrl + '/my');
   }

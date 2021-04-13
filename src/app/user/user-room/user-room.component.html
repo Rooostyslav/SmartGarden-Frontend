@@ -18,7 +18,7 @@
                         <h4 class="d-inline">{{user.email}}</h4>
                     </div>
                     <div *ngIf="isAdmin" class="mb-3">
-                        <button class="btn btn-danger">
+                        <button class="btn btn-danger" (click)="createBackup()">
                             <a [href]="backupString" download class="text-light">Create Backup</a>
                         </button>
                     </div>
@@ -27,8 +27,23 @@
         </div>
         <div *ngIf="isAdmin else isUser" class="mt-4">
             <div>
-                <h3 class="mb-2">User List</h3>
-                <app-user-list></app-user-list>
+                <h3 class="mb-2">Backups List</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>File Name</th>
+                            <th> Apply</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let backup of backups">
+                            <td>{{backup}}</td>
+                            <td>
+                                <button class="btn btn-danger" (click)="applyBackup(backup)">Apply Backup {{backup}}</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

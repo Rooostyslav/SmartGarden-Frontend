@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { SMART_GARDEN_API } from 'src/app/app-injections-tokens';
+import { Backup } from 'src/models/backup/backup';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +21,15 @@ export class BackupService {
   }
 
   getBackupPath(): string {
-    return this.baseApiUrl;
+    return this.baseApiUrl + '/create';
+  }
+
+  getAllBackupsFileNames(): Observable<string[]> {
+    return this.http.get<string[]>(this.baseApiUrl);
+  }
+
+  applyBackup(backup: Backup) {
+    return this.http.post(this.baseApiUrl + '/apply', backup);
   }
 
 }

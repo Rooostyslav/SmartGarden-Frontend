@@ -23,6 +23,7 @@ import { BackupService } from 'src/services/backup.service';
 import { UserRoomComponent } from './user/user-room/user-room.component';
 import { ActionListComponent } from './action/action-list/action-list.component';
 import { ResourceListComponent } from './resource/resource-list/resource-list.component';
+import { ViewPlantComponent } from './plant/view-plant/view-plant.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ResourceListComponent } from './resource/resource-list/resource-list.co
     SignUpComponent,
     UserRoomComponent,
     ActionListComponent,
-    ResourceListComponent
+    ResourceListComponent,
+    ViewPlantComponent
   ],
   imports: [
     BrowserModule,

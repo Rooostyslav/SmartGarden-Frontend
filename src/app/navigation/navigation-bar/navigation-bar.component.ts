@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ViewUser } from 'src/models/user/view-user';
 import { AuthService } from 'src/services/auth.service';
 import { UserService } from 'src/services/user.service';
 
@@ -32,6 +31,15 @@ export class NavigationBarComponent implements OnInit {
   isAdmin(): boolean {
     if (this.authService.isLoggedIn) {
       if (this.user.role == "admin") {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  isUser(): boolean {
+    if (this.authService.isLoggedIn) {
+      if (this.user.role == "user") {
         return true;
       }
     }

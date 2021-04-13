@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Backup } from 'src/models/backup/backup';
 import { ViewUser } from 'src/models/user/view-user';
 import { AuthService } from 'src/services/auth.service';
 import { BackupService } from 'src/services/backup.service';
@@ -11,6 +12,7 @@ import { UserService } from 'src/services/user.service';
 })
 export class UserRoomComponent implements OnInit {
 
+  backups: any;
   user: ViewUser = {
     id: 0,
     name: '',
@@ -27,6 +29,9 @@ export class UserRoomComponent implements OnInit {
   ngOnInit(): void {
     this.userService.getMyUser()
       .subscribe(result => this.user = result);
+
+    this.backupService.getAllBackupsFileNames()
+      .subscribe(result => this.backups = result);
   }
 
   get isLoggedIn(): boolean {
@@ -44,6 +49,23 @@ export class UserRoomComponent implements OnInit {
       }
     }
     return false;
+  }
+
+  createBackup() {
+    this.backupService.getAllBackupsFileNames()
+      .subscribe(result => this.backups = result);
+  }
+  
+  applyBackup(backupFileName: string) {
+
+    var backup: Backup = {
+      fileName: backupFileName
+    };
+
+    this.backupService.applyBackup(backup)
+      .subscribe(result => {
+        alert("Success apply backup > " + backup.fileName + "!");
+      });
   }
 
 }

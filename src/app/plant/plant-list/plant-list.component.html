@@ -11,6 +11,7 @@
                 <th>Description</th>
                 <th>Location</th>
                 <th>Actions</th>
+                <th>View</th>
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
@@ -23,6 +24,9 @@
                 <td>{{plant.location}}</td>
                 <td>
                     <a [routerLink]="['/plants/' + plant.id + '/actions']">actions</a>
+                </td>
+                <td>
+                    <button class="btn btn-light" [routerLink]="['/plants/view/' + plant.id]">View</button>
                 </td>
                 <td>
                     <button class="btn btn-warning" [routerLink]="['/plants/edit/' + plant.id]">Edit</button>
