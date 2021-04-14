@@ -47,6 +47,10 @@ export class NavigationBarComponent implements OnInit {
   }
 
   logout() {
+    this.user = {
+      name: '',
+      email: ''
+    };
     this.authService.logout();
     this.router.navigate(['/login']);
   }

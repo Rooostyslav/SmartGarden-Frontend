@@ -16,7 +16,8 @@
                 <td>{{action.id}}</td>
                 <td>{{action.name}}</td>
                 <td>{{action.date}}</td>
-                <td>{{action.status}}</td>
+                <td *ngIf="action.status">fulfiled</td>
+                <td *ngIf="!action.status">unfulfiled</td>
             </tr>
         </tbody>
     </table>

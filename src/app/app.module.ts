@@ -24,6 +24,7 @@ import { UserRoomComponent } from './user/user-room/user-room.component';
 import { ActionListComponent } from './action/action-list/action-list.component';
 import { ResourceListComponent } from './resource/resource-list/resource-list.component';
 import { ViewPlantComponent } from './plant/view-plant/view-plant.component';
+import { GardenFormComponent } from './garden/garden-form/garden-form.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ViewPlantComponent } from './plant/view-plant/view-plant.component';
     UserRoomComponent,
     ActionListComponent,
     ResourceListComponent,
-    ViewPlantComponent
+    ViewPlantComponent,
+    GardenFormComponent
   ],
   imports: [
     BrowserModule,

@@ -26,4 +26,8 @@ export class GardenService {
   getGardensByUser(userId: number) : Observable<ViewGarden[]> {
     return this.http.get<ViewGarden[]>(this.baseApiUrl + 'users/' + userId + '/gardens');
   }
+
+  createGarden(garden: any) {
+    return this.http.post(this.baseApiUrl + 'gardens', garden);
+  }
 }

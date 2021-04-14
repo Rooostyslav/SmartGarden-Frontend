@@ -32,7 +32,7 @@ export class PlantService {
     return this.http.get<ViewPlant>(this.baseApiUrl + '/my');
   }
 
-  postPlant(plant: Plant) {
+  createPlant(plant: Plant) {
     return this.http.post(this.baseApiUrl, plant);
   }
 
