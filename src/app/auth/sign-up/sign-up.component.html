@@ -1,42 +1,39 @@
 <div class="container p-3">
-    <div>
-        {{ user | json }}
-    </div>
-    <h1>Register</h1>
+    <h1 i18n="@@registration">Register</h1>
     <div *ngIf="error" class="text-danger">
         <h4>{{error}}</h4>
     </div>
     <form #form="ngForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
             <label for="email">
-                <h5>Name</h5>
-                <input class="form-control" name="name" type="text" [(ngModel)]="user.name" placeholder="Enter name" required>
+                <h5 i18n="@@name">Name</h5>
+                <input class="form-control" name="name" type="text" [(ngModel)]="user.name" required>
             </label>
         </div>
         <div class="form-group">
             <label for="email">
-                <h5>Email</h5>
-                <input class="form-control" name="email" type="email" [(ngModel)]="user.email" placeholder="Enter email" required>
+                <h5 i18n="@@email">Email</h5>
+                <input class="form-control" name="email" type="email" [(ngModel)]="user.email" required>
             </label>
         </div>
         <div class="form-group">
             <label for="password">
-                <h5>Password</h5>
-                <input class="form-control" name="password" type="password" [(ngModel)]="user.password" placeholder="Enter password" required>
+                <h5 i18n="@@password">Password</h5>
+                <input class="form-control" name="password" type="password" [(ngModel)]="user.password" required>
             </label>
         </div>
 
         <div *ngIf="authService.isLoggedIn" class="form-group">
             <label for="role">
-                <h5>Role</h5>
+                <h5 i18n="@@role">Role</h5>
             </label>
             <select class="form-control col-2" id="role" name="role" [(ngModel)]="user.role" required>
-                <option value="user">User</option>
-                <option value="admin">Admin</option>
+                <option value="user" i18n="@@user">User</option>
+                <option value="admin" i18n="@@admin">Admin</option>
             </select>
-            <div *ngIf="user.touched && !user.valid" class="alert alert-danger">Please select Role</div>
+            <div *ngIf="user.touched && !user.valid" class="alert alert-danger" i18n="Please select role">Please select Role</div>
         </div>
 
-        <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Register</button>
+        <button class="btn btn-primary" type="submit" [disabled]="!form.valid" i18n="@@registration">Register</button>
     </form>
 </div>

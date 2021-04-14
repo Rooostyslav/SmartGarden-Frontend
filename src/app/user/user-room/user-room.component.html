@@ -2,7 +2,7 @@
     <div *ngIf="isLoggedIn else isNotLogged">
         <div>
             <div class="mt-4 mb-1 text-center">
-                <h3>My cabinet</h3>
+                <h3 i18n="my cabinet">My cabinet</h3>
             </div>
             <div class="d-inline">
                 <div class="d-inline mr-2">
@@ -10,16 +10,16 @@
                 </div>
                 <div class="d-block">
                     <div class="mb-2">
-                        <h3 class="d-inline">Name: </h3>
+                        <h3 class="d-inline" i18n="@@name">Name: </h3>
                         <h4 class="d-inline">{{user.name}}</h4>
                     </div>
                     <div class="mb-2">
-                        <h3 class="d-inline">Email: </h3>
+                        <h3 class="d-inline" i18n="@@email">Email: </h3>
                         <h4 class="d-inline">{{user.email}}</h4>
                     </div>
                     <div *ngIf="isAdmin" class="mb-3">
                         <button class="btn btn-danger" (click)="createBackup()">
-                            <a [href]="backupString" download class="text-light">Create Backup</a>
+                            <a [href]="backupString" download class="text-light" i18n="create backup">Create Backup</a>
                         </button>
                     </div>
                 </div>
@@ -27,19 +27,19 @@
         </div>
         <div *ngIf="isAdmin else isUser" class="mt-4">
             <div>
-                <h3 class="mb-2">Backups List</h3>
+                <h3 class="mb-2" i18n="backups list">Backups List</h3>
                 <table>
                     <thead>
                         <tr>
-                            <th>File Name</th>
-                            <th> Apply</th>
+                            <th i18n="file name">File Name</th>
+                            <th i18n="apply"> Apply</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr *ngFor="let backup of backups">
                             <td>{{backup}}</td>
                             <td>
-                                <button class="btn btn-danger" (click)="applyBackup(backup)">Apply Backup {{backup}}</button>
+                                <button class="btn btn-danger" (click)="applyBackup(backup)" i18n="apply backup">Apply Backup {{backup}}</button>
                             </td>
                         </tr>
                     </tbody>
@@ -57,5 +57,5 @@
 
 
 <ng-template #isNotLogged>
-    <h2 class="m-3">You are not logged in!</h2>
+    <h2 class="m-3" i18n="you are not logged in">You are not logged in!</h2>
 </ng-template>

@@ -1,14 +1,14 @@
 <div class="container">
     <div class="m-2 mb-3">
-        <h1>{{topicText}}</h1>
+        <h1 i18n="action list">{{topicText}}</h1>
     </div>
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Date</th>
-                <th>Status</th>
+                <th i18n="@@id">Id</th>
+                <th i18n="@@name">Name</th>
+                <th i18n="@@date">Date</th>
+                <th i18n="@@status">Status</th>
             </tr>
         </thead>
         <tbody>
@@ -16,8 +16,8 @@
                 <td>{{action.id}}</td>
                 <td>{{action.name}}</td>
                 <td>{{action.date}}</td>
-                <td *ngIf="action.status">fulfiled</td>
-                <td *ngIf="!action.status">unfulfiled</td>
+                <td *ngIf="action.status" i18n="fulfiled">fulfiled</td>
+                <td *ngIf="!action.status" i18n="unfulfiled">unfulfiled</td>
             </tr>
         </tbody>
     </table>

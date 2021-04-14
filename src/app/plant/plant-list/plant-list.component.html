@@ -1,19 +1,19 @@
 <div class="container">
     <div class="mt-2 mb-2">
-        <h1>{{topicText}}</h1>
-        <button class="btn btn-primary" [routerLink]="['/plants/new']">Create new plant</button>
+        <h1 i18n="plants list">{{topicText}}</h1>
+        <button class="btn btn-primary" [routerLink]="['/plants/new']" i18n="Create new plant">Create new plant</button>
     </div>
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Location</th>
-                <th>Actions</th>
-                <th>View</th>
-                <th>Edit</th>
-                <th>Delete</th>
+                <th i18n="@@id">Id</th>
+                <th i18n="@@name">Name</th>
+                <th i18n="@@description">Description</th>
+                <th i18n="@@location">Location</th>
+                <th i18n="@@actions">Actions</th>
+                <th i18n="@@view">View</th>
+                <th i18n="@@edit">Edit</th>
+                <th i18n="@@delete">Delete</th>
             </tr>
         </thead>
         <tbody>
@@ -23,16 +23,16 @@
                 <td>{{plant.description}}</td>
                 <td>{{plant.location}}</td>
                 <td>
-                    <a [routerLink]="['/plants/' + plant.id + '/actions']">actions</a>
+                    <a [routerLink]="['/plants/' + plant.id + '/actions']" i18n="@@action">actions</a>
                 </td>
                 <td>
-                    <button class="btn btn-light" [routerLink]="['/plants/view/' + plant.id]">View</button>
+                    <button class="btn btn-light" [routerLink]="['/plants/view/' + plant.id]" i18n="@@view">View</button>
                 </td>
                 <td>
-                    <button class="btn btn-warning" [routerLink]="['/plants/edit/' + plant.id]">Edit</button>
+                    <button class="btn btn-warning" [routerLink]="['/plants/edit/' + plant.id]" i18n="@@edit">Edit</button>
                 </td>
                 <td>
-                    <button class="btn btn-danger" (click)="onDelete(plant.id)">Delete</button>
+                    <button class="btn btn-danger" (click)="onDelete(plant.id)" i18n="@@delete">Delete</button>
                 </td>
             </tr>
         </tbody>

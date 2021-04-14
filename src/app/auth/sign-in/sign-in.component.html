@@ -1,21 +1,21 @@
 <div class="container p-3">
-    <h1>Login</h1>
+    <h1 i18n="@@login">Login</h1>
     <div *ngIf="error" class="text-danger">
         <h4>{{error}}</h4>
     </div>
     <form #form="ngForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
             <label for="email">
-                <h5>Email</h5>
-                <input class="form-control" name="email" type="email" [(ngModel)]="login.email" placeholder="Enter email" required>
+                <h5 i18n="@@email">Email</h5>
+                <input class="form-control" name="email" type="email" [(ngModel)]="login.email" required>
             </label>
         </div>
         <div class="form-group">
             <label for="password">
-                <h5>Password</h5>
-                <input class="form-control" name="password" type="password" [(ngModel)]="login.password" placeholder="Enter password" required>
+                <h5 i18n="@@password">Password</h5>
+                <input class="form-control" name="password" type="password" [(ngModel)]="login.password" required>
             </label>
         </div>
-        <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Login</button>
+        <button class="btn btn-primary" type="submit" [disabled]="!form.valid" i18n="@@login">Login</button>
     </form>
 </div>

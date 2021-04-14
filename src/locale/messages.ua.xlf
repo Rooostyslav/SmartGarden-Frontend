@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="187187500641108332" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{topicText}}"/></source>
+        <target>Список завдань</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/action/action-list/action-list.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/garden/garden-list/garden-list.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-list/plant-list.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resource/resource-list/resource-list.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">action list</note>
+      </trans-unit>
+      <trans-unit id="id" datatype="html">
+        <source>Id</source>
+        <target>Ідентифікатор</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/action/action-list/action-list.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/garden/garden-list/garden-list.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-list/plant-list.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resource/resource-list/resource-list.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-list/user-list.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="name" datatype="html">
+        <source>Name</source>
+        <target>Назва</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/action/action-list/action-list.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/sign-up/sign-up.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/garden/garden-form/garden-form.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/garden/garden-list/garden-list.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-form/plant-form.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-list/plant-list.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/view-plant/view-plant.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resource/resource-list/resource-list.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-list/user-list.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-room/user-room.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="date" datatype="html">
+        <source>Date</source>
+        <target>Дата</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/action/action-list/action-list.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="status" datatype="html">
+        <source>Status</source>
+        <target>Статус</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/action/action-list/action-list.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="12059562742576763" datatype="html">
+        <source>fulfiled</source>
+        <target>Виконаний</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/action/action-list/action-list.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">fulfiled</note>
+      </trans-unit>
+      <trans-unit id="5185937851198232324" datatype="html">
+        <source>unfulfiled</source>
+        <target>Не виконаний</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/action/action-list/action-list.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">unfulfiled</note>
+      </trans-unit>
+      <trans-unit id="login" datatype="html">
+        <source>Login</source>
+        <target>Ввійти</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/sign-in/sign-in.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/sign-in/sign-in.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navigation/navigation-bar/navigation-bar.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email" datatype="html">
+        <source>Email</source>
+        <target>Електронна пошта</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/sign-in/sign-in.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/sign-up/sign-up.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-list/user-list.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-room/user-room.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="password" datatype="html">
+        <source>Password</source>
+        <target>Пароль</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/sign-in/sign-in.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/sign-up/sign-up.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registration" datatype="html">
+        <source>Register</source>
+        <target>Реєстрація</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/sign-up/sign-up.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/sign-up/sign-up.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="role" datatype="html">
+        <source>Role</source>
+        <target>Роль</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/sign-up/sign-up.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-list/user-list.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user" datatype="html">
+        <source>User</source>
+        <target>Користувач</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/sign-up/sign-up.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/garden/garden-form/garden-form.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="admin" datatype="html">
+        <source>Admin</source>
+        <target>Адміністратор</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/sign-up/sign-up.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="118713735093421257" datatype="html">
+        <source>Please select Role</source>
+        <target>Виберіть роль</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/sign-up/sign-up.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description">Please select role</note>
+      </trans-unit>
+      <trans-unit id="description" datatype="html">
+        <source>Descripttion</source>
+        <target>Опис</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/garden/garden-form/garden-form.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/garden/garden-list/garden-list.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-form/plant-form.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-list/plant-list.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/view-plant/view-plant.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="save" datatype="html">
+        <source>Save</source>
+        <target>Зберегти</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/garden/garden-form/garden-form.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-form/plant-form.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="80995052685255873" datatype="html">
+        <source>Create new garden</source>
+        <target>Створити новий сад</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/garden/garden-list/garden-list.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Create new garden</note>
+      </trans-unit>
+      <trans-unit id="edit" datatype="html">
+        <source>Edit</source>
+        <target>Редагувати</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/garden/garden-list/garden-list.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/garden/garden-list/garden-list.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-list/plant-list.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-list/plant-list.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="plants" datatype="html">
+        <source>Plants</source>
+        <target>Рослини</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/garden/garden-list/garden-list.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/garden/garden-list/garden-list.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navigation/navigation-bar/navigation-bar.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="resources" datatype="html">
+        <source>Resources</source>
+        <target>Ресурси</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/garden/garden-list/garden-list.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/garden/garden-list/garden-list.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navigation/navigation-bar/navigation-bar.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="smartgarden" datatype="html">
+        <source>Smart Garden</source>
+        <target>Розумний сад</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navigation/navigation-bar/navigation-bar.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="users" datatype="html">
+        <source>Users</source>
+        <target>Користувачі</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navigation/navigation-bar/navigation-bar.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gardens" datatype="html">
+        <source>Gardens</source>
+        <target>Сади</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navigation/navigation-bar/navigation-bar.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-list/user-list.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-list/user-list.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="actions" datatype="html">
+        <source>Actions</source>
+        <target>Завдання</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navigation/navigation-bar/navigation-bar.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-list/plant-list.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="logout" datatype="html">
+        <source>Logout</source>
+        <target>Вийти</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navigation/navigation-bar/navigation-bar.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="signin" datatype="html">
+        <source>Sign Up</source>
+        <target>Зареєструватися</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navigation/navigation-bar/navigation-bar.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="location" datatype="html">
+        <source>Location</source>
+        <target>Місцезнаходження</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-form/plant-form.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-list/plant-list.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/view-plant/view-plant.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="garden" datatype="html">
+        <source>Garden</source>
+        <target>Сад</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-form/plant-form.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6560219675596479171" datatype="html">
+        <source>Create new plant</source>
+        <target>Створити нову рослину</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-list/plant-list.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Create new plant</note>
+      </trans-unit>
+      <trans-unit id="view" datatype="html">
+        <source>View</source>
+        <target>Перегляд</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-list/plant-list.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-list/plant-list.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="delete" datatype="html">
+        <source>Delete</source>
+        <target>Видалити</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-list/plant-list.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-list/plant-list.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="action" datatype="html">
+        <source>actions</source>
+        <target>Завдання</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-list/plant-list.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="condition" datatype="html">
+        <source>Condition</source>
+        <target>Стан</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/view-plant/view-plant.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="amount" datatype="html">
+        <source>Amount</source>
+        <target>Кількість</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resource/resource-list/resource-list.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1293659137101722713" datatype="html">
+        <source> Users Not Found </source>
+        <target>Користувач не знайдений</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-list/user-list.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+        <note priority="1" from="description">users not found</note>
+      </trans-unit>
+      <trans-unit id="3287898100482122462" datatype="html">
+        <source>My cabinet</source>
+        <target>Мій кабінет</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-room/user-room.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">my cabinet</note>
+      </trans-unit>
+      <trans-unit id="4792440249970309191" datatype="html">
+        <source>Create Backup</source>
+        <target>Створити бекап</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-room/user-room.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">create backup</note>
+      </trans-unit>
+      <trans-unit id="7563107972407267136" datatype="html">
+        <source>Backups List</source>
+        <target>Список бекапів</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-room/user-room.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">backups list</note>
+      </trans-unit>
+      <trans-unit id="1758558063878069946" datatype="html">
+        <source>File Name</source>
+        <target>Назва файлу</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-room/user-room.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description">file name</note>
+      </trans-unit>
+      <trans-unit id="4778812986702193126" datatype="html">
+        <source> Apply</source>
+        <target>Застосувати</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-room/user-room.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">apply</note>
+      </trans-unit>
+      <trans-unit id="756754074037492992" datatype="html">
+        <source>Apply Backup <x id="INTERPOLATION" equiv-text="{{backup}}"/></source>
+        <target>Застосувати бекап</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-room/user-room.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description">apply backup</note>
+      </trans-unit>
+      <trans-unit id="9120089912344313081" datatype="html">
+        <source>You are not logged in!</source>
+        <target>Ви не авторизовані!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-room/user-room.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <note priority="1" from="description">you are not logged in</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -63,6 +63,14 @@
                   "maximumError": "4kb"
                 }
               ]
+            },
+            "ua": {
+              "aot": true,
+              "outputPath": "dist/under-c-ua/",
+              "i18nFile": "src/locale/messages.ua.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "ua",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -74,6 +82,9 @@
           "configurations": {
             "production": {
               "browserTarget": "SmartGarden:build:production"
+            },
+            "ua": {
+              "browserTarget": "SmartGarden:build:ua"
             }
           }
         },

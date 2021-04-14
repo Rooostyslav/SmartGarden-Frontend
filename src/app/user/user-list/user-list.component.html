@@ -2,11 +2,11 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Role</th>
-                <th>Gardens</th>
+                <th i18n="@@id">Id</th>
+                <th i18n="@@name">Name</th>
+                <th i18n="@@email">Email</th>
+                <th i18n="@@role">Role</th>
+                <th i18n="@@gardens">Gardens</th>
             </tr>
         </thead>
         <tbody>
@@ -16,10 +16,10 @@
                 <td>{{user.email}}</td>
                 <td>{{user.role}}</td>
                 <td>
-                    <a [routerLink]="['/users/' + user.id + '/gardens']">gardens</a>
+                    <a [routerLink]="['/users/' + user.id + '/gardens']" i18n="@@gardens">gardens</a>
                 </td>
             </tr>
-            <h1 *ngIf="!users" class="text-center mt-3">
+            <h1 *ngIf="!users" class="text-center mt-3" i18n="users not found">
                 Users Not Found
             </h1>
         </tbody>

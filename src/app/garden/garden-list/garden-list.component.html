@@ -1,17 +1,17 @@
 <div class="container">
     <div class="mt-2 mb-2">
-        <h1>{{topicText}}</h1>
-        <button class="btn btn-primary" [routerLink]="['/gardens/new']">Create new garden</button>
+        <h1 i18n="garden list">{{topicText}}</h1>
+        <button class="btn btn-primary" [routerLink]="['/gardens/new']" i18n="Create new garden">Create new garden</button>
     </div>
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Edit</th>
-                <th>Plants</th>
-                <th>Resources</th>
+                <th i18n="@@id">Id</th>
+                <th i18n="@@name">Name</th>
+                <th i18n="@@description">Description</th>
+                <th i18n="@@edit">Edit</th>
+                <th i18n="@@plants">Plants</th>
+                <th i18n="@@resources">Resources</th>
             </tr>
         </thead>
         <tbody>
@@ -20,13 +20,13 @@
                 <td>{{garden.name}}</td>
                 <td>{{garden.description}}</td>
                 <td>
-                    <button class="btn btn-warning" [routerLink]="['/gardens/edit/' + garden.id]">Edit</button>
+                    <button class="btn btn-warning" [routerLink]="['/gardens/edit/' + garden.id]" i18n="@@edit">Edit</button>
                 </td>
                 <td>
-                    <a [routerLink]="['/gardens/' + garden.id + '/plants']">plants</a>
+                    <a [routerLink]="['/gardens/' + garden.id + '/plants']" i18n="@@plants">plants</a>
                 </td>
                 <td>
-                    <a [routerLink]="['/gardens/' + garden.id + '/resources']">resources</a>
+                    <a [routerLink]="['/gardens/' + garden.id + '/resources']" i18n="@@resources">resources</a>
                 </td>
             </tr>
         </tbody>
