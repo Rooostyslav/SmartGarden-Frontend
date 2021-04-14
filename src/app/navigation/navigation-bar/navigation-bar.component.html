@@ -45,11 +45,24 @@
                 </button>
             </div>
 
+            
             <div *ngIf="!authService.isLoggedIn" class="d-inline">
                 <button class="btn btn-outline-secondary mr-2" [routerLink]="['/sign-up']" i18n="@@signin">Sign Up</button>
             </div>
             <div *ngIf="!authService.isLoggedIn" class="d-inline">
                 <button class="btn btn-outline-secondary mr-2" [routerLink]="['/login']" i18n="@@login">Login</button>
+            </div>
+
+            <div class="dropdown" class="ml-2 d-inline">
+                <button class="btn btn-warning dropdown-toggle" type="button" 
+                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" 
+                aria-expanded="false" i18n="@@locale">
+                  Locale
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a href="http://localhost:4200/cabinet" class="dropdown-item text-dark">English</a>
+                    <a href="http://localhost:4201/cabinet" class="dropdown-item text-dark">Українська</a>
+                </div>
             </div>
         </div>
     </nav>
