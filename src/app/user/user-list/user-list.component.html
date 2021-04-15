@@ -3,7 +3,7 @@
         <thead>
             <tr>
                 <th i18n="@@id">Id</th>
-                <th i18n="@@name">Name</th>
+                <th i18n="@@username">Name</th>
                 <th i18n="@@email">Email</th>
                 <th i18n="@@role">Role</th>
                 <th i18n="@@gardens">Gardens</th>
@@ -16,7 +16,7 @@
                 <td>{{user.email}}</td>
                 <td>{{user.role}}</td>
                 <td>
-                    <a [routerLink]="['/users/' + user.id + '/gardens']" i18n="@@gardens">gardens</a>
+                    <a [routerLink]="['/users/' + user.id + '/gardens']" i18n="@@gardens">Gardens</a>
                 </td>
             </tr>
             <h1 *ngIf="!users" class="text-center mt-3" i18n="users not found">

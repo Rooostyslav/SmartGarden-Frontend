@@ -2,26 +2,13 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="187187500641108332" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{topicText}}"/></source>
-        <target>Список завдань</target>
+      <trans-unit id="actionslist" datatype="html">
+        <source>Actions list</source>
+        <target>Список завддань</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/action/action-list/action-list.component.html</context>
           <context context-type="linenumber">3</context>
         </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/garden/garden-list/garden-list.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/plant/plant-list/plant-list.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/resource/resource-list/resource-list.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-        <note priority="1" from="description">action list</note>
       </trans-unit>
       <trans-unit id="id" datatype="html">
         <source>Id</source>
@@ -82,14 +69,6 @@
           <context context-type="sourcefile">src/app/resource/resource-list/resource-list.component.html</context>
           <context context-type="linenumber">9</context>
         </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/user/user-list/user-list.component.html</context>
-          <context context-type="linenumber">6</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/user/user-room/user-room.component.html</context>
-          <context context-type="linenumber">13</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="date" datatype="html">
         <source>Date</source>
@@ -106,10 +85,11 @@
           <context context-type="sourcefile">src/app/action/action-list/action-list.component.html</context>
           <context context-type="linenumber">11</context>
         </context-group>
+        <target></target>
       </trans-unit>
       <trans-unit id="12059562742576763" datatype="html">
         <source>fulfiled</source>
-        <target>Виконаний</target>
+        <target>не виконаний</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/action/action-list/action-list.component.html</context>
           <context context-type="linenumber">19</context>
@@ -118,7 +98,7 @@
       </trans-unit>
       <trans-unit id="5185937851198232324" datatype="html">
         <source>unfulfiled</source>
-        <target>Не виконаний</target>
+        <target>виконаний</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/action/action-list/action-list.component.html</context>
           <context context-type="linenumber">20</context>
@@ -138,7 +118,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navigation/navigation-bar/navigation-bar.component.html</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="email" datatype="html">
@@ -155,10 +135,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/user/user-list/user-list.component.html</context>
           <context context-type="linenumber">7</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/user/user-room/user-room.component.html</context>
-          <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="password" datatype="html">
@@ -227,7 +203,7 @@
         <note priority="1" from="description">Please select role</note>
       </trans-unit>
       <trans-unit id="description" datatype="html">
-        <source>Descripttion</source>
+        <source>Description</source>
         <target>Опис</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/garden/garden-form/garden-form.component.html</context>
@@ -260,6 +236,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/plant/plant-form/plant-form.component.html</context>
           <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gardenslist" datatype="html">
+        <source>Gardens list</source>
+        <target>Список садів</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/garden/garden-list/garden-list.component.html</context>
+          <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="80995052685255873" datatype="html">
@@ -377,10 +361,18 @@
       </trans-unit>
       <trans-unit id="signin" datatype="html">
         <source>Sign Up</source>
-        <target>Зареєструватися</target>
+        <target>Реєстрація</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navigation/navigation-bar/navigation-bar.component.html</context>
-          <context context-type="linenumber">49</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="locale" datatype="html">
+        <source> Locale </source>
+        <target>Мова</target>v
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navigation/navigation-bar/navigation-bar.component.html</context>
+          <context context-type="linenumber">60,61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="location" datatype="html">
@@ -405,6 +397,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/plant/plant-form/plant-form.component.html</context>
           <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="plantslist" datatype="html">
+        <source>Plants list</source>
+        <target>Список рослин</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plant/plant-list/plant-list.component.html</context>
+          <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6560219675596479171" datatype="html">
@@ -456,6 +456,14 @@
           <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="resourceslist" datatype="html">
+        <source>Resources list</source>
+        <target>Список ресурсів</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resource/resource-list/resource-list.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="amount" datatype="html">
         <source>Amount</source>
         <target>Кількість</target>
@@ -464,9 +472,17 @@
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="username" datatype="html">
+        <source>Name</source>
+        <target>Назва</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-list/user-list.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="1293659137101722713" datatype="html">
         <source> Users Not Found </source>
-        <target>Користувач не знайдений</target>
+        <target>Користу не знайдені</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/user/user-list/user-list.component.html</context>
           <context context-type="linenumber">23,24</context>
@@ -481,6 +497,22 @@
           <context context-type="linenumber">5</context>
         </context-group>
         <note priority="1" from="description">my cabinet</note>
+      </trans-unit>
+      <trans-unit id="usernamecolon" datatype="html">
+        <source>Name: </source>
+        <target>Ім'я</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-room/user-room.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="emailcolon" datatype="html">
+        <source>Email: </source>
+        <target>Електронна пошта: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user-room/user-room.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="4792440249970309191" datatype="html">
         <source>Create Backup</source>
