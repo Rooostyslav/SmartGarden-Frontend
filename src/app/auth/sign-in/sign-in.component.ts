@@ -21,7 +21,19 @@ export class SignInComponent implements OnInit {
     private router: Router,
     private authService: AuthService,
     private userService: UserService
-    ) { }
+    ) {
+      if (authService.isLoggedIn) {
+        this.userService.getMyUser()
+          .subscribe(user => {
+            if (user.role == "admin") {
+              this.router.navigate(['/users']);
+            } 
+            else {
+              this.router.navigate(['/gardens/my']);
+            }
+          });
+      }
+    }
 
   ngOnInit(): void {
   }

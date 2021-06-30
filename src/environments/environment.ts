@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-  smartGardenApi: 'http://localhost:5000',
-  smartGardenAuthApi: 'http://localhost:5001',
-  allowedDomains: ['http://localhost:5000', 'http://localhost:5001']
+  smartGardenApi: 'http://192.168.1.4:5000',
+  smartGardenAuthApi: 'http://192.168.1.4:5001',
+  allowedDomains: ['http://192.168.1.4:5000', 'http://192.168.1.4:5001']
 };
 
 /*

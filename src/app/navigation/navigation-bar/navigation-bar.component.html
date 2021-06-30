@@ -4,13 +4,13 @@
             <a [routerLink]="['']" class="navbar-brand" i18n="@@smartgarden">Smart Garden</a>
         </div>
 
-        <ul *ngIf="isAdmin()" class="navbar-nav mr-auto">
+        <ul *ngIf="isAdmin" class="navbar-nav mr-auto">
             <li  class="nav-item">
                 <button class="btn btn-warning mr-2" [routerLink]="['/users']" i18n="@@users">Users</button>
             </li>
         </ul>
 
-        <ng-template [ngIf]="isUser()">
+        <ng-template [ngIf]="isUser">
             <ul class="navbar-nav mr-1">
                 <li class="nav-item">
                     <button class="btn btn-success mr-2" [routerLink]="['/gardens/my']" i18n="@@gardens">Gardens</button>

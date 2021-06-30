@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "start:ua": "ng serve --configuration=ua",
-    "build": "ng build",
+    "start": "ng serve -o --port=4200",
+    "start:ua": "ng serve --configuration=ua --port=4201",
+    "build": "ng build --prod",
     "build:ua": "ng build --configuration=ua",
     "test": "ng test",
     "lint": "ng lint",
